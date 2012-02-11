@@ -53,14 +53,37 @@ class smalltalk(Plugin):
             self.say("No thank you, I'm in love with the black iPhone from you friend.")
         self.complete_request()
 
-    @register("de-DE", ".*erzähl.*Witz.*")
     @register("en-US", ".*tell.*joke*")
     def st_tell_joke(self, speech, language):
-        if language == 'de-DE':
-            self.say("Zwei iPhones stehen an der Bar ... den Rest habe ich vergessen.")            
-        else:
+    number = random.choice([1,2,3,4,5,6])
+	if number == 1:
             self.say("Two iPhones walk into a bar ... I forget the rest.")
-        self.complete_request()
+	elif number == 2:
+	        self.say("What's the difference between a penis and a bonus? Your wife will blow your bonus.")
+	elif number == 3:
+	        self.say("What goes in hard and pink, and comes off soft and sticky? Bubble gum.")
+	elif number == 4:
+        answer = self.ask("Knock Knock.")
+	    if ("Who's") or ("Who is") in answer:
+            self.ask("Dover")
+		    self.say("Ben Dover and I'll give you a big surprise.")
+	    else:
+		    self.say("Who ruins the joke.")
+	elif number == 5:
+	     answer = self.ask("Knock Knock.")
+	     if ("Who's") or ("Who is") in answer:
+		     self.ask("Little old lady")
+		     self.say("Wow! I didn't know you could yodel!")
+	     else:
+		     self.say("Who ruins the joke.")
+	else:
+	     answer = self.ask("Knock Knock.")
+	     if ("Who's") or ("Who is") in answer:
+		     self.ask("Boo")
+		     self.say("Don't cry it's only a joke.")
+	     else:
+		     self.say("Who ruins the joke.")
+             self.complete_request()
 
     @register("de-DE", ".*erzähl.*Geschichte.*")
     @register("en-US", ".*tell.*story*")
