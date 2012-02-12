@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#by Joh Gerna
+#by Joh Gerna, Moeses
 
 from plugin import *
 import random
