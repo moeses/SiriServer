@@ -60,31 +60,31 @@ class smalltalk(Plugin):
 	if number == 1:
             self.say("Two iPhones walk into a bar ... I forget the rest.")
 	elif number == 2:
-	        self.say("What's the difference between a penis and a bonus? Your wife will blow your bonus.")
+	    self.say("What's the difference between a penis and a bonus? Your wife will blow your bonus.")
 	elif number == 3:
-	        self.say("What goes in hard and pink, and comes off soft and sticky? Bubble gum.")
+	    self.say("What goes in hard and pink, and comes off soft and sticky? Bubble gum.")
 	elif number == 4:
-        answer = self.ask("Knock Knock.")
+            answer = self.ask("Knock Knock.")
 	    if ("Who's") or ("Who is") in answer:
-            self.ask("Dover")
-		    self.say("Ben Dover and I'll give you a big surprise.")
+                self.ask("Dover")
+		self.say("Ben Dover and I'll give you a big surprise.")
 	    else:
-		    self.say("Who ruins the joke.")
+		self.say("Who ruins the joke.")
 	elif number == 5:
 	     answer = self.ask("Knock Knock.")
 	     if ("Who's") or ("Who is") in answer:
-		     self.ask("Little old lady")
-		     self.say("Wow! I didn't know you could yodel!")
+		 self.ask("Little old lady")
+		 self.say("Wow! I didn't know you could yodel!")
 	     else:
-		     self.say("Who ruins the joke.")
+		 self.say("Who ruins the joke.")
 	else:
 	     answer = self.ask("Knock Knock.")
 	     if ("Who's") or ("Who is") in answer:
-		     self.ask("Boo")
-		     self.say("Don't cry it's only a joke.")
+		 self.ask("Boo")
+		 self.say("Don't cry it's only a joke.")
 	     else:
-		     self.say("Who ruins the joke.")
-             self.complete_request()
+		 self.say("Who ruins the joke.")
+         self.complete_request()
 
     @register("de-DE", ".*erzähl.*Geschichte.*")
     @register("en-US", ".*tell.*story*")
