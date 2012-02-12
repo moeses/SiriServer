@@ -3,6 +3,7 @@
 #by Joh Gerna
 
 from plugin import *
+import random
 
 class smalltalk(Plugin):
     
